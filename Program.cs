@@ -80,10 +80,10 @@ namespace VirtualPets
                 //end of update
 
                 ForegroundColor = ConsoleColor.DarkBlue;
-
-                WriteAt(@"(_  _) /__\  (  \/  )  /__\  / __)(  _  )(_  _)/ __)( )_( )(_  _)",0,0);
-                WriteAt(@"  )(  /(__)\  )    (  /(__)\((  _-.)(_)(   )( ( (__  ) _ (  _)(_", 0, 1);
-                WriteAt(@" (__)(__)(__)(_/\/\_)(__)(__)\___/(_____) (__) \___)(_) (_)(____)",0,2);
+                WriteAt(@" ____   __    __  __    __    ___  _____  ____  ___  _   _  ____", 0, 0);
+                WriteAt(@"(_  _) /__\  (  \/  )  /__\  / __)(  _  )(_  _)/ __)( )_( )(_  _)",0,1);
+                WriteAt(@"  )(  /(__)\  )    (  /(__)\((  _-.)(_)(   )( ( (__  ) _ (  _)(_", 0, 2);
+                WriteAt(@" (__)(__)(__)(_/\/\_)(__)(__)\___/(_____) (__) \___)(_) (_)(____)",0,3);
                 ForegroundColor = ConsoleColor.White;
                 BackgroundColor = ConsoleColor.DarkRed;
                 WriteAt("Inventory", 55, 6);
@@ -124,32 +124,29 @@ namespace VirtualPets
 
 
                 ForegroundColor = ConsoleColor.DarkGray;
-              /*  WriteAt(@"
-
-    .---.     .-''-.
-   /.'``\\   / /``'.\
-  |    .-=~~~=-.    |
-   \__           __/   (\
-     |   6_6     |      ))
-    =/    Y      \=    //
-     \   'w'     /    ((
-     .'-..-.__.-';     \\
-    /     /o.\    \     \\
-   |    ))) O |    |     ))
-   `.__,.'o' o/    /\   //
-       _{`._o|    /  | //
-      / {    ((((/   |//
-      \ {     /       /
-       > \____\      |
-    .-'   /--:-'   .'
-   ((((--'  ((((--`", 0, 17);*/
-
+                ForegroundColor = ConsoleColor.DarkGray;
+                 WriteAt(@"  .---.     .-''-.", 25, 9);
+                 WriteAt(@" /.'``\\   / /``'.\", 25, 10);
+                 WriteAt(@"|    .-=~~~=-.    |", 25, 11);
+                 WriteAt(@" \__           __/   (\", 25, 12);
+                 WriteAt(@"   |   6_6     |      ))", 25, 13);
+                 WriteAt(@"  =/    Y      \=    //", 25, 14);
+                 WriteAt(@"   \   'w'     /    ((", 25, 15);
+                 WriteAt(@"   .'-..-.__.-';     \\", 25, 16);
+                 WriteAt(@"  /     /o.\    \     \\", 25, 17);
+                 WriteAt(@" |    ))) O |    |     ))", 25, 18);
+                 WriteAt(@" `.__,.'o' o/    /\   //", 25, 19);
+                 WriteAt(@"     _{`._o|    /  | //", 25, 20);
+                 WriteAt(@"    / {    ((((/   |//", 25, 21);
+                 WriteAt(@"    \ {     /       /", 25, 22);
+                 WriteAt(@"     > \____\      |", 25, 23);
+                 WriteAt(@"  .-'   /--:-'   .'", 25, 24);
+                 WriteAt(@"  ((((--'  ((((--`", 25, 25);
+                 WriteAt(@"  ", 25, 26);
                 ResetColor();
                 BackgroundColor = ConsoleColor.White;
                 ForegroundColor = ConsoleColor.Black;
-              
-              
-                WriteAt("Press exit to leave this game at any time", 0, 34);
+
                 ResetColor();
                 //WriteLine(simulation);
                 Thread.Sleep(500);
