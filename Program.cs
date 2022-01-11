@@ -125,8 +125,8 @@ namespace VirtualPets
 
                 ForegroundColor = ConsoleColor.DarkGray;
                 ForegroundColor = ConsoleColor.DarkGray;
-                 WriteAt(@"  .---.     .-''-.", 25, 9);
-                 WriteAt(@" /.'``\\   / /``'.\", 25, 10);
+                 WriteAt(@" .---.      .-''-.", 25, 9);
+                 WriteAt(@"/.'``\\    / /``'.\", 25, 10);
                  WriteAt(@"|    .-=~~~=-.    |", 25, 11);
                  WriteAt(@" \__           __/   (\", 25, 12);
                  WriteAt(@"   |   6_6     |      ))", 25, 13);
