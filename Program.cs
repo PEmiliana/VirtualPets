@@ -119,8 +119,9 @@ namespace VirtualPets
                 WriteAt("Shop", 55, 11);
                 ResetColor();
                 ForegroundColor = ConsoleColor.DarkCyan;
-                WriteAt("Ball", 55, 12);
-                WriteAt("Laser Pointer", 55, 13);
+                WriteAt("Toys", 55, 12);
+                WriteAt("Medicine", 55, 13);
+                WriteAt("Food", 55, 14);
 
 
                 ForegroundColor = ConsoleColor.DarkGray;
