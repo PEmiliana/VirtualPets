@@ -38,7 +38,7 @@ namespace VirtualPets
 
         {
 
-            Mouse mouse = new Mouse();
+            Pet mouse = new Pet();
 
 
 
