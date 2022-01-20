@@ -38,7 +38,7 @@ namespace VirtualPets
 
         {
 
-            Mouse mouse = new Mouse();
+            Pet mouse = new Pet();
 
 
 
@@ -101,7 +101,7 @@ namespace VirtualPets
                 WriteAt("Room temperature currently at 22°C", 0, 7);
                 ForegroundColor = ConsoleColor.Blue;
                 WriteAt("Coins", 0, 8);
-                WriteAt($"Pet's Moood = {mouse.Mood}   ", 0, 9);
+                WriteAt($"Pet's Mood = {mouse.Mood}   ", 0, 9);
                 WriteAt($"Pets Hunger = {mouse.Hunger}   ", 0, 10);
                 WriteAt($"Pets Health = {mouse.Health}   ", 0, 11);
 
@@ -119,8 +119,9 @@ namespace VirtualPets
                 WriteAt("Shop", 55, 11);
                 ResetColor();
                 ForegroundColor = ConsoleColor.DarkCyan;
-                WriteAt("Ball", 55, 12);
-                WriteAt("Laser Pointer", 55, 13);
+                WriteAt("Toys", 55, 12);
+                WriteAt("Medicine", 55, 13);
+                WriteAt("Food", 55, 14);
 
 
                 ForegroundColor = ConsoleColor.DarkGray;

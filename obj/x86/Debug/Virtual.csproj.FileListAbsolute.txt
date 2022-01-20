@@ -1,0 +1,6 @@
+C:\Users\p110132937\source\repos\VirtualPets\obj\x86\Debug\Virtual.csproj.AssemblyReference.cache
+C:\Users\p110132937\source\repos\VirtualPets\obj\x86\Debug\Virtual.csproj.CoreCompileInputs.cache
+C:\Users\p110132937\source\repos\VirtualPets\bin\Debug\ConsoleApplication.exe
+C:\Users\p110132937\source\repos\VirtualPets\bin\Debug\ConsoleApplication.pdb
+C:\Users\p110132937\source\repos\VirtualPets\obj\x86\Debug\ConsoleApplication.exe
+C:\Users\p110132937\source\repos\VirtualPets\obj\x86\Debug\ConsoleApplication.pdb
