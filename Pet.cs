@@ -10,7 +10,7 @@ namespace VirtualPets
 public Pet()
         {
             Health = 100;
-            Mood = 100;
+            Mood = 200;
             Hunger = 0;
         }
         public void Update()
