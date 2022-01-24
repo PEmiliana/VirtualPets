@@ -1,4 +1,8 @@
 using System;
+
+using static System.Console;
+
+using System;
 using System.Collections.Generic;
 using System.Threading;
 using System.Timers;
@@ -13,7 +17,7 @@ namespace VirtualPets
         protected static int origRow;
         protected static int origCol;
 
-      
+
 
         static void WriteAt(string s, int x, int y)
         {
@@ -30,7 +34,7 @@ namespace VirtualPets
             }
         }
 
-       
+
 
 
         static void Main(string[] args)
@@ -50,16 +54,16 @@ namespace VirtualPets
                 //update method
                 mouse.Hunger += 1;
                 mouse.Mood -= 1;
-                if (mouse.Hunger>=70)
+                if (mouse.Hunger >= 70)
                 {
                     mouse.Health -= 2;
                 }
-                
-
-                
 
 
-                if(KeyAvailable)
+
+
+
+                if (KeyAvailable)
                 {
                     keypressed = ReadKey().Key;
                     if (keypressed == ConsoleKey.D1)
@@ -81,9 +85,9 @@ namespace VirtualPets
 
                 ForegroundColor = ConsoleColor.DarkBlue;
                 WriteAt(@" ____   __    __  __    __    ___  _____  ____  ___  _   _  ____", 0, 0);
-                WriteAt(@"(_  _) /__\  (  \/  )  /__\  / __)(  _  )(_  _)/ __)( )_( )(_  _)",0,1);
+                WriteAt(@"(_  _) /__\  (  \/  )  /__\  / __)(  _  )(_  _)/ __)( )_( )(_  _)", 0, 1);
                 WriteAt(@"  )(  /(__)\  )    (  /(__)\((  _-.)(_)(   )( ( (__  ) _ (  _)(_", 0, 2);
-                WriteAt(@" (__)(__)(__)(_/\/\_)(__)(__)\___/(_____) (__) \___)(_) (_)(____)",0,3);
+                WriteAt(@" (__)(__)(__)(_/\/\_)(__)(__)\___/(_____) (__) \___)(_) (_)(____)", 0, 3);
                 ForegroundColor = ConsoleColor.White;
                 BackgroundColor = ConsoleColor.DarkRed;
                 WriteAt("Inventory", 55, 6);
@@ -100,7 +104,7 @@ namespace VirtualPets
                 ForegroundColor = ConsoleColor.DarkYellow;
                 WriteAt("Room temperature currently at 22°C", 0, 7);
                 ForegroundColor = ConsoleColor.Blue;
-                WriteAt("Coins", 0, 8);
+                WriteAt("Coins = 50", 0, 8);
                 WriteAt($"Pet's Mood = {mouse.Mood}   ", 0, 9);
                 WriteAt($"Pets Hunger = {mouse.Hunger}   ", 0, 10);
                 WriteAt($"Pets Health = {mouse.Health}   ", 0, 11);
@@ -110,9 +114,9 @@ namespace VirtualPets
                 WriteAt("Interactions", 0, 13);
                 ResetColor();
                 ForegroundColor = ConsoleColor.Green;
-                WriteAt("Feed Pet", 0, 14);
-                WriteAt("Play with Pet", 0, 15);
-                WriteAt("Tend to Pet", 0, 16);
+                WriteAt("Press 1 to Feed Pet", 0, 14);
+                WriteAt("Press 2 to Play with Pet", 0, 15);
+                WriteAt("Press 3 to Tend to Pet", 0, 16);
 
                 BackgroundColor = ConsoleColor.DarkCyan;
                 ForegroundColor = ConsoleColor.White;
@@ -126,24 +130,24 @@ namespace VirtualPets
 
                 ForegroundColor = ConsoleColor.DarkGray;
                 ForegroundColor = ConsoleColor.DarkGray;
-                 WriteAt(@" .---.      .-''-.", 25, 9);
-                 WriteAt(@"/.'``\\    / /``'.\", 25, 10);
-                 WriteAt(@"|    .-=~~~=-.    |", 25, 11);
-                 WriteAt(@" \__           __/   (\", 25, 12);
-                 WriteAt(@"   |   6_6     |      ))", 25, 13);
-                 WriteAt(@"  =/    Y      \=    //", 25, 14);
-                 WriteAt(@"   \   'w'     /    ((", 25, 15);
-                 WriteAt(@"   .'-..-.__.-';     \\", 25, 16);
-                 WriteAt(@"  /     /o.\    \     \\", 25, 17);
-                 WriteAt(@" |    ))) O |    |     ))", 25, 18);
-                 WriteAt(@" `.__,.'o' o/    /\   //", 25, 19);
-                 WriteAt(@"     _{`._o|    /  | //", 25, 20);
-                 WriteAt(@"    / {    ((((/   |//", 25, 21);
-                 WriteAt(@"    \ {     /       /", 25, 22);
-                 WriteAt(@"     > \____\      |", 25, 23);
-                 WriteAt(@"  .-'   /--:-'   .'", 25, 24);
-                 WriteAt(@"  ((((--'  ((((--`", 25, 25);
-                 WriteAt(@"  ", 25, 26);
+                WriteAt(@" .---.      .-''-.", 25, 9);
+                WriteAt(@"/.'``\\    / /``'.\", 25, 10);
+                WriteAt(@"|    .-=~~~=-.    |", 25, 11);
+                WriteAt(@" \__           __/   (\", 25, 12);
+                WriteAt(@"   |   6_6     |      ))", 25, 13);
+                WriteAt(@"  =/    Y      \=    //", 25, 14);
+                WriteAt(@"   \   'w'     /    ((", 25, 15);
+                WriteAt(@"   .'-..-.__.-';     \\", 25, 16);
+                WriteAt(@"  /     /o.\    \     \\", 25, 17);
+                WriteAt(@" |    ))) O |    |     ))", 25, 18);
+                WriteAt(@" `.__,.'o' o/    /\   //", 25, 19);
+                WriteAt(@"     _{`._o|    /  | //", 25, 20);
+                WriteAt(@"    / {    ((((/   |//", 25, 21);
+                WriteAt(@"    \ {     /       /", 25, 22);
+                WriteAt(@"     > \____\      |", 25, 23);
+                WriteAt(@"  .-'   /--:-'   .'", 25, 24);
+                WriteAt(@"  ((((--'  ((((--`", 25, 25);
+                WriteAt(@"  ", 25, 26);
                 ResetColor();
                 BackgroundColor = ConsoleColor.White;
                 ForegroundColor = ConsoleColor.Black;
@@ -151,12 +155,12 @@ namespace VirtualPets
                 ResetColor();
                 //WriteLine(simulation);
                 Thread.Sleep(500);
-               
+
 
 
             }
-            
-           
+
+
 
 
 
@@ -171,6 +175,6 @@ namespace VirtualPets
 
 
         }
-        
+
     }
 }
